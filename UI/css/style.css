@@ -1,3 +1,4 @@
+
         html, body
         {
             padding: 0;
@@ -91,3 +92,176 @@
             background-image: -webkit-gradient(linear, left top, left bottom, from(#117AF4), to(#117AF5));
             background-image: -moz-linear-gradient(top left 90deg, #117AF4 0%, #117AF4  100%);
         }
+=======
+body {
+	padding: 0px;
+	margin: 0px;
+	display: grid;
+	height: 100vh;
+	background: #fff;
+	grid-template-rows: 1fr 10fr 1fr;
+	grid-gap: 10px;
+	font-family: arial;
+}
+
+#header, #content, #footer {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+#content {
+	/*margin-top:7.5%;*/
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-gap: 12px;
+    background: #EBEBED;
+}
+
+#left-nav, #center, #right-nav {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+	padding: 3%;
+}
+
+/*#left-nav, #right-nav {
+	position: fixed;
+}*/
+
+#header {
+	background: #117AF3;
+	padding: 1%;
+	color: #ffff;
+	/*position: fixed;*/
+	width: 98%;
+}
+
+#header .cont {
+	display: inline-block;
+}
+.search {
+	height: 20px;
+	margin-left: 3%;
+	width: 500px;
+	padding: 2%;
+	border: none;
+	border-radius: 3px;
+}
+
+.title {
+	font-size: 18px;
+	font-style: italic;
+}
+
+.icon {
+	height: 30px;
+	width: 30px;
+}
+
+.qs {
+	height: 10px;
+	width: 20px;
+	background: #117AF3;
+	padding: 1%;
+	border-radius: 50%;
+}
+
+
+
+.links {
+	float: right;
+	line-height: 60px;
+}
+.links .cont a {
+	text-decoration: none;
+	color: white;
+}
+
+button {
+	padding: 10px;
+	border: none;
+	background: #5FBA7D;
+	color: #fff;
+	border-radius: 3px;
+}
+
+#footer {
+	text-align: center;
+	background: #3B4045;
+	padding: 2%;
+	color: #fff;
+}
+
+h3 {
+	text-align: center;
+	border-bottom: 1px solid;
+}
+h4{
+	border-bottom: 1px solid #F48024;
+	margin: 1%;
+}
+
+.topics li {
+   list-style: none;
+   border-right: 3px solid #F48024;
+   margin: 3px;
+   text-align: center;
+   background: #fff;
+   padding: 3%;
+}
+.aqs li {
+   list-style: none;
+   border-left: 3px solid #3B4045;
+   margin: 3px;
+   text-align: center;
+   background: #fff;
+   padding: 3%;
+}
+
+.aqs li:hover {
+  cursor: pointer;
+  background: #99ff99;
+}
+
+.topics li:hover {
+	cursor: pointer;
+	background: #E1ECF4;
+}
+
+.questions li {
+	list-style: none;
+	background-color: #fff;
+	padding: 10px;
+	margin: 1%;
+	border-radius: 3px;
+}
+
+.questions li:hover {
+	background: #E1ECF4;
+	cursor: pointer;
+}
+
+.date, .q-topic {
+	font-style: italic;
+	color: #fff;
+	padding: 0.5%;
+	border-radius: 3px;
+	background: #3B4045;
+	margin-left: 5%; 
+}
+
+
+.form-reg {
+	padding: 5%;
+	margin: auto;
+}
+
+.form-reg input{
+	margin: 2%;
+	width: 95%;
+	height: 20px;
+	padding: 1%;
+	border: none;
+	border-radius: 3px;
+}
+
+.sub {
+  height: 50px;
+}
